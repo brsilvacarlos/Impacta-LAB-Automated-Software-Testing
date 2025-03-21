@@ -19,6 +19,11 @@ describe('Conta', () => {
         const conta: Conta = new Conta("123456", 5000.0);
         expect(() => conta.sacar(-5.0)).toThrow('valor não pode ser igual ou maior que zero')
     });
+
+    test('sacar valor acima do saldo', async () => {
+        const conta: Conta = new Conta("123456", 199.0);
+        expect(() => conta.sacar(200.0)).toThrow('saldo indisponível para operação')
+    });
     
     test('depositar com sucesso', async () => {
         const conta: Conta = new Conta("123456", 5000.0);
