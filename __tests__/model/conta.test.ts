@@ -40,6 +40,12 @@ describe('Conta', () => {
         const conta: Conta = criarConta();
         expect(() => conta.depositar(-5.0)).toThrow('valor não pode ser igual ou maior que zero')
     });
+
+    test("sacar todo o saldo", async () => {	
+        const conta: Conta = criarConta();	
+        conta.sacar(5000.0);	
+        expect(conta.saldo).toBe(0);	
+      });	
     
 
 });
