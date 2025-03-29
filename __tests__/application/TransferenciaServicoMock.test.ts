@@ -1,4 +1,4 @@
-import { TransferenciaDTO } from "../../src/application/TransferenciaDTO";
+import { TransferenciaDTO } from "../../src/application/dto/TransferenciaDTO";
 import { TransferenciaServico } from "../../src/application/TransferenciaServico";
 import { Conta } from "../../src/model/Conta";
 import { Repositorio } from "../../src/model/contract/Repositorio";

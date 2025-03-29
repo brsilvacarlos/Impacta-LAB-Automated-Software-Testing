@@ -3,7 +3,7 @@ import { Conta } from "../model/Conta";
 import { Repositorio } from "../model/contract/Repositorio";
 import { Recibo } from "../model/Recibo";
 import { TransferenciaValor } from "../model/servico/TransferenciaValor";
-import { TransferenciaDTO } from "./TransferenciaDTO";
+import { TransferenciaDTO } from "./dto/TransferenciaDTO";
 
 export class TransferenciaServico{
 
