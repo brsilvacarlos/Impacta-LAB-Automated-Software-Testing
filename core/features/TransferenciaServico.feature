@@ -5,7 +5,7 @@ Funcionalidade: Transferir valores entre contas
     Cenário: Transferir valores com sucesso entre duas contas
         Dada conta "<origem>" com saldo <saldoOrigem> e a conta "<destino>" com saldo <saldoDestino>
         Quando a conta "<origem>" transferir <valor> para a conta "<destino>"
-        Então o saldo da conta "<origem>" deve ser <resultadoOrigem> e a conta "<destino>" deve ser <resultadoDestino>
+        Então o saldo da conta "<origem>" deve ser <resultadoOrigem> e a conta "<destino>" <resultadoDestino>
 
     Exemplos:
         | origem    | destino   | valor   | saldoOrigem | saldoDestino  | resultadoOrigem   | resultadoDestino  |
