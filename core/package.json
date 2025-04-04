@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest && npm run test:cucumber",
     "test:cucumber": "cucumber-js -p default",
     "build": "tsc",
     "sonar:scanner": "sonar-scanner"
