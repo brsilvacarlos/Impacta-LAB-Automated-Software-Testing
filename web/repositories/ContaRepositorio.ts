@@ -33,4 +33,7 @@ export class ContaRepositorio implements Repositorio<string, Conta> {
             },
         });
     }
+    public async listar(): Promise<Conta | undefined> {
+        return prisma.conta.findMany();
+    }
 }

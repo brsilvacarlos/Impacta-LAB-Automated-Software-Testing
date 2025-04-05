@@ -1,0 +1,28 @@
+meta {
+  name: Transferir
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/api/contas/transferir
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "origem": "123456",
+      "destino": "654321",
+      "valor": 100.0
+  }
+}
+
+tests {
+  test("Status code is 200", function () {
+    expect(res.getStatus()).to.equals(200);
+  });
+  test("Retornou recibo", function () {
+      expect(res.getBody()).to.have.all.keys("recibo");
+  });
+}

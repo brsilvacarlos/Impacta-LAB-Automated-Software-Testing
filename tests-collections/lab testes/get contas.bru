@@ -1,0 +1,17 @@
+meta {
+  name: get contas
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3000/api/contas/123456
+  body: none
+  auth: none
+}
+
+tests {
+  test("Status code is 200", function () {
+    expect(res.getStatus()).to.equals(200);
+  });
+}
