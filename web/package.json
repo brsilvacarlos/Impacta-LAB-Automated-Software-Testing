@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@cucumber/cucumber": "^9.5.1",
+    "@playwright/test": "^1.38.1",
     "@types/jest": "^29.5.3",
     "@types/node": "22.13.14",
     "@types/react": "19.0.12",
